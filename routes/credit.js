@@ -18,7 +18,7 @@ router.post('/', createCredit)
 /**GET ALL Product */
 router.get('/', getAllCredit)
 
-router.get('/customer_id', getSingleCustomer)
+router.get('/:customer_id', getSingleCustomer)
 
 /**GET SINGLE EMPLOYEE */
 router.get('/transaction/:transaction_id', getSingleCredit)
