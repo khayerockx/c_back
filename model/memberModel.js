@@ -25,6 +25,10 @@ const memberSchema = new Schema({
             type: String,
             required: false
       },
+      membership_fee: {
+            type: String,
+            required: false
+      },
       status: {
             type: String,
             required: false
