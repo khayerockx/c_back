@@ -101,11 +101,6 @@ const memberSchema = new Schema({
             type: String,
             required: false
       },
-
-
-
-
-
       tin: {
             type: String,
             required: false
@@ -194,6 +189,31 @@ const memberSchema = new Schema({
             type: String,
             required: false
       },
+      share_capital_amount: {
+            type: String,
+            required: false
+      },
+      
+      coop_savings_amount: {
+            type: String,
+            required: false
+      },
+      
+      housing_equity_account_no: {
+            type: String,
+            required: false
+      },
+      
+      special_savings_amount: {
+            type: String,
+            required: false
+      },
+      
+      kaya_savings_amount: {
+            type: String,
+            required: false
+      },
+      
       
       
 },

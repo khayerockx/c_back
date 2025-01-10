@@ -15,7 +15,7 @@ const createMember = async (req, res) => {
             membership_fee,
             status,
             hhhc_membership_number,
-            bod_res, 
+            bod_res,
             coop_savings_account_number,
             kaya_atm_card_number,
             kaya_atm_savings_account_number,
@@ -50,7 +50,11 @@ const createMember = async (req, res) => {
             pwd_type,
             termination_date,
             termination_bod,
-
+            share_capital_amount,
+            coop_savings_amount, //added
+            housing_equity_account_no, //added
+            special_savings_amount, //added
+            kaya_savings_amount, //added
 
 
             //not included
@@ -64,9 +68,9 @@ const createMember = async (req, res) => {
 
 
 
-            
 
-            
+
+
 
 
       } = req.body
@@ -118,6 +122,11 @@ const createMember = async (req, res) => {
                   pwd_type,
                   termination_date,
                   termination_bod,
+                  share_capital_amount, //added
+                  coop_savings_amount, //added
+                  housing_equity_account_no, //added
+                  special_savings_amount, //added
+                  kaya_savings_amount, //added
 
             })
             res.status(200).json(member)
